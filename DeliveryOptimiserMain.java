@@ -279,6 +279,7 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
 
         jLabel3.setText("Password");
 
+        loginBtn.setFont(new java.awt.Font("Arial Unicode MS", 1, 12)); // NOI18N
         loginBtn.setText("Login");
         loginBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -286,6 +287,7 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
             }
         });
 
+        loginRegisterBtn.setFont(new java.awt.Font("Arial Unicode MS", 1, 12)); // NOI18N
         loginRegisterBtn.setText("Register Online");
 
         javax.swing.GroupLayout LoginScreenLayout = new javax.swing.GroupLayout(LoginScreen);
@@ -610,7 +612,7 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
             AppScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(NavPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(ScreenViews, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-            .addComponent(BtnPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(BtnPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 307, Short.MAX_VALUE)
         );
         AppScreenLayout.setVerticalGroup(
             AppScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

@@ -127,6 +127,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="loginBtn">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial Unicode MS" size="12" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Login"/>
               </Properties>
               <Events>
@@ -135,6 +138,9 @@
             </Component>
             <Component class="javax.swing.JButton" name="loginRegisterBtn">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial Unicode MS" size="12" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Register Online"/>
               </Properties>
             </Component>
@@ -159,7 +165,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="NavPanel" alignment="0" max="32767" attributes="0"/>
                   <Component id="ScreenViews" alignment="1" pref="0" max="32767" attributes="0"/>
-                  <Component id="BtnPanel" alignment="0" pref="0" max="32767" attributes="0"/>
+                  <Component id="BtnPanel" alignment="0" pref="307" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
