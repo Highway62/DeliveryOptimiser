@@ -5,9 +5,12 @@
  */
 package deliveryoptimiser;
 
+import java.awt.AWTEvent;
 import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.List;
+import java.awt.Toolkit;
+import java.awt.event.AWTEventListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -46,6 +49,7 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
     String[] cargoArray;
     int cWeight, cVolume;
     Double capWeight, capVolume;
+    public static int clickCount = 0;
     
     /**
      * Creates new form DeliveryOptimiserMain
@@ -100,6 +104,20 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
         // Initialise Cargo Bars
         cargoWeightBar.setStringPainted(true);
         cargoVolumeBar.setStringPainted(true);
+        
+        //Detect mouse events to log accuracy for evaluation
+        long eventMask = AWTEvent.MOUSE_EVENT_MASK;
+
+        Toolkit.getDefaultToolkit().addAWTEventListener( new AWTEventListener()
+            {
+                @Override
+                public void eventDispatched(AWTEvent e)
+                {
+                    System.out.println(DeliveryOptimiserMain.clickCount++);
+                }
+                
+                
+            }, eventMask);
         
     }
     
