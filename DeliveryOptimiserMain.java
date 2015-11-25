@@ -265,7 +265,7 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
         MainPanel.setBackground(new java.awt.Color(153, 153, 153));
         MainPanel.setLayout(new java.awt.CardLayout());
 
-        LoginScreen.setBackground(new java.awt.Color(153, 153, 153));
+        LoginScreen.setBackground(new java.awt.Color(102, 255, 102));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/logo2.png"))); // NOI18N
 
@@ -302,7 +302,7 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(loginPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
         LoginScreenLayout.setVerticalGroup(
             LoginScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -321,14 +321,14 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
                 .addComponent(loginBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(19, 19, 19)
                 .addComponent(loginRegisterBtn)
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         MainPanel.add(LoginScreen, "LoginScreenView");
 
-        AppScreen.setBackground(new java.awt.Color(255, 255, 255));
+        AppScreen.setBackground(new java.awt.Color(102, 255, 102));
 
-        NavPanel.setBackground(new java.awt.Color(255, 255, 255));
+        NavPanel.setBackground(new java.awt.Color(102, 255, 102));
 
         NavLeft.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/NavLeft.png"))); // NOI18N
         NavLeft.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -344,14 +344,14 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
             }
         });
 
-        NavItem.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
+        NavItem.setFont(new java.awt.Font("Arial Unicode MS", 0, 14)); // NOI18N
         NavItem.setText("Pickup");
         NavItem.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        NavAddr.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
+        NavAddr.setFont(new java.awt.Font("Arial Unicode MS", 0, 14)); // NOI18N
         NavAddr.setText("23 Dundas Crescent, Dundee");
 
-        NavPCode.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
+        NavPCode.setFont(new java.awt.Font("Arial Unicode MS", 0, 14)); // NOI18N
         NavPCode.setText("D45 7DF");
 
         javax.swing.GroupLayout NavPanelLayout = new javax.swing.GroupLayout(NavPanel);
@@ -387,10 +387,10 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        ScreenViews.setBackground(new java.awt.Color(255, 255, 255));
+        ScreenViews.setBackground(new java.awt.Color(102, 255, 102));
         ScreenViews.setLayout(new java.awt.CardLayout());
 
-        MapScreen.setBackground(new java.awt.Color(255, 255, 255));
+        MapScreen.setBackground(new java.awt.Color(102, 255, 102));
 
         Map.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Map1.png"))); // NOI18N
 
@@ -407,7 +407,7 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
 
         ScreenViews.add(MapScreen, "mapScreen");
 
-        ItemScreen.setBackground(new java.awt.Color(255, 255, 255));
+        ItemScreen.setBackground(new java.awt.Color(204, 204, 255));
 
         itemConfirmBtn.setBackground(new java.awt.Color(102, 255, 102));
         itemConfirmBtn.setText("Confirm Item Pickup/Delivery");
@@ -437,7 +437,7 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
         });
 
         itemText.setColumns(20);
-        itemText.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        itemText.setFont(new java.awt.Font("Arial Unicode MS", 1, 12)); // NOI18N
         itemText.setRows(5);
         jScrollPane1.setViewportView(itemText);
 
@@ -484,9 +484,9 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
 
         ScreenViews.add(ItemScreen, "imageScreen");
 
-        CargoScreen.setBackground(new java.awt.Color(255, 255, 255));
+        CargoScreen.setBackground(new java.awt.Color(204, 204, 255));
 
-        cargoList.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        cargoList.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
         cargoList.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
@@ -547,10 +547,10 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
 
         ScreenViews.add(CargoScreen, "cargoScreen");
 
-        BtnPanel.setBackground(new java.awt.Color(255, 255, 255));
+        BtnPanel.setBackground(new java.awt.Color(102, 255, 102));
 
-        MapBtn.setBackground(new java.awt.Color(105, 229, 44));
-        MapBtn.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
+        MapBtn.setBackground(new java.awt.Color(204, 204, 255));
+        MapBtn.setFont(new java.awt.Font("Arial Unicode MS", 0, 18)); // NOI18N
         MapBtn.setText("Map");
         MapBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -558,8 +558,8 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
             }
         });
 
-        ItemInfoBtn.setBackground(new java.awt.Color(105, 229, 44));
-        ItemInfoBtn.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
+        ItemInfoBtn.setBackground(new java.awt.Color(204, 204, 255));
+        ItemInfoBtn.setFont(new java.awt.Font("Arial Unicode MS", 0, 18)); // NOI18N
         ItemInfoBtn.setText("Item Info");
         ItemInfoBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -567,8 +567,8 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
             }
         });
 
-        CargoBtn.setBackground(new java.awt.Color(105, 229, 44));
-        CargoBtn.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
+        CargoBtn.setBackground(new java.awt.Color(204, 204, 255));
+        CargoBtn.setFont(new java.awt.Font("Arial Unicode MS", 0, 18)); // NOI18N
         CargoBtn.setText("Cargo");
         CargoBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -609,8 +609,8 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
         AppScreenLayout.setHorizontalGroup(
             AppScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(NavPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(ScreenViews, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
-            .addComponent(BtnPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(ScreenViews, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(BtnPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
         AppScreenLayout.setVerticalGroup(
             AppScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -629,11 +629,11 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 306, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 306, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 503, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 503, Short.MAX_VALUE)
         );
 
         setBounds(0, 0, 322, 541);
