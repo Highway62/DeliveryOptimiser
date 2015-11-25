@@ -252,13 +252,14 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
         cargoVolume = new javax.swing.JLabel();
         cargoWeightBar = new javax.swing.JProgressBar();
         cargoVolumeBar = new javax.swing.JProgressBar();
-        jPanel2 = new javax.swing.JPanel();
+        BtnPanel = new javax.swing.JPanel();
         MapBtn = new javax.swing.JButton();
         ItemInfoBtn = new javax.swing.JButton();
         CargoBtn = new javax.swing.JButton();
+        jSeparator1 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(51, 255, 51));
+        setBackground(new java.awt.Color(153, 153, 153));
         setResizable(false);
 
         MainPanel.setBackground(new java.awt.Color(153, 153, 153));
@@ -301,7 +302,7 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(loginPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
         LoginScreenLayout.setVerticalGroup(
             LoginScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -320,14 +321,14 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
                 .addComponent(loginBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(19, 19, 19)
                 .addComponent(loginRegisterBtn)
-                .addContainerGap(53, Short.MAX_VALUE))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
 
         MainPanel.add(LoginScreen, "LoginScreenView");
 
-        AppScreen.setBackground(new java.awt.Color(153, 153, 153));
+        AppScreen.setBackground(new java.awt.Color(255, 255, 255));
 
-        NavPanel.setBackground(new java.awt.Color(153, 153, 153));
+        NavPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         NavLeft.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/NavLeft.png"))); // NOI18N
         NavLeft.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -343,14 +344,14 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
             }
         });
 
-        NavItem.setForeground(new java.awt.Color(255, 255, 255));
+        NavItem.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         NavItem.setText("Pickup");
         NavItem.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        NavAddr.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        NavAddr.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         NavAddr.setText("23 Dundas Crescent, Dundee");
 
-        NavPCode.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        NavPCode.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         NavPCode.setText("D45 7DF");
 
         javax.swing.GroupLayout NavPanelLayout = new javax.swing.GroupLayout(NavPanel);
@@ -386,10 +387,10 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        ScreenViews.setBackground(new java.awt.Color(153, 153, 153));
+        ScreenViews.setBackground(new java.awt.Color(255, 255, 255));
         ScreenViews.setLayout(new java.awt.CardLayout());
 
-        MapScreen.setBackground(new java.awt.Color(153, 153, 153));
+        MapScreen.setBackground(new java.awt.Color(255, 255, 255));
 
         Map.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Map1.png"))); // NOI18N
 
@@ -401,12 +402,12 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
         );
         MapScreenLayout.setVerticalGroup(
             MapScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Map, javax.swing.GroupLayout.PREFERRED_SIZE, 288, Short.MAX_VALUE)
+            .addComponent(Map, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         ScreenViews.add(MapScreen, "mapScreen");
 
-        ItemScreen.setBackground(new java.awt.Color(153, 153, 153));
+        ItemScreen.setBackground(new java.awt.Color(255, 255, 255));
 
         itemConfirmBtn.setBackground(new java.awt.Color(102, 255, 102));
         itemConfirmBtn.setText("Confirm Item Pickup/Delivery");
@@ -456,7 +457,7 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
                             .addComponent(itemType))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(itemCancelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 294, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 283, Short.MAX_VALUE))
                 .addContainerGap())
         );
         ItemScreenLayout.setVerticalGroup(
@@ -483,7 +484,7 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
 
         ScreenViews.add(ItemScreen, "imageScreen");
 
-        CargoScreen.setBackground(new java.awt.Color(153, 153, 153));
+        CargoScreen.setBackground(new java.awt.Color(255, 255, 255));
 
         cargoList.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         cargoList.setModel(new javax.swing.AbstractListModel<String>() {
@@ -518,7 +519,7 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
                                 .addGroup(CargoScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(cargoWeightBar, javax.swing.GroupLayout.DEFAULT_SIZE, 128, Short.MAX_VALUE)
                                     .addComponent(cargoVolumeBar, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))))
-                        .addGap(0, 76, Short.MAX_VALUE)))
+                        .addGap(0, 65, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         CargoScreenLayout.setVerticalGroup(
@@ -537,7 +538,7 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
                     .addGroup(CargoScreenLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(cargoVolume)
-                        .addContainerGap(25, Short.MAX_VALUE))
+                        .addContainerGap(37, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CargoScreenLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(cargoVolumeBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -546,8 +547,10 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
 
         ScreenViews.add(CargoScreen, "cargoScreen");
 
-        jPanel2.setBackground(new java.awt.Color(153, 153, 153));
+        BtnPanel.setBackground(new java.awt.Color(255, 255, 255));
 
+        MapBtn.setBackground(new java.awt.Color(105, 229, 44));
+        MapBtn.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
         MapBtn.setText("Map");
         MapBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -555,6 +558,8 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
             }
         });
 
+        ItemInfoBtn.setBackground(new java.awt.Color(105, 229, 44));
+        ItemInfoBtn.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
         ItemInfoBtn.setText("Item Info");
         ItemInfoBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -562,6 +567,8 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
             }
         });
 
+        CargoBtn.setBackground(new java.awt.Color(105, 229, 44));
+        CargoBtn.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
         CargoBtn.setText("Cargo");
         CargoBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -569,24 +576,32 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(MapBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ItemInfoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(CargoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+        javax.swing.GroupLayout BtnPanelLayout = new javax.swing.GroupLayout(BtnPanel);
+        BtnPanel.setLayout(BtnPanelLayout);
+        BtnPanelLayout.setHorizontalGroup(
+            BtnPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BtnPanelLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(BtnPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(BtnPanelLayout.createSequentialGroup()
+                        .addComponent(MapBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ItemInfoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(CargoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                .addComponent(MapBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(ItemInfoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(CargoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+        BtnPanelLayout.setVerticalGroup(
+            BtnPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BtnPanelLayout.createSequentialGroup()
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(BtnPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(MapBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ItemInfoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CargoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout AppScreenLayout = new javax.swing.GroupLayout(AppScreen);
@@ -594,20 +609,18 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
         AppScreenLayout.setHorizontalGroup(
             AppScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(NavPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(ScreenViews, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-            .addGroup(AppScreenLayout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 318, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(ScreenViews, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(BtnPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
         );
         AppScreenLayout.setVerticalGroup(
             AppScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(AppScreenLayout.createSequentialGroup()
                 .addComponent(NavPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(ScreenViews, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ScreenViews, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26))
+                .addComponent(BtnPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40))
         );
 
         MainPanel.add(AppScreen, "MapScreenView");
@@ -616,14 +629,14 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 306, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 306, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 503, Short.MAX_VALUE)
         );
 
-        setBounds(0, 0, 322, 520);
+        setBounds(0, 0, 322, 541);
     }// </editor-fold>//GEN-END:initComponents
 
     private void loginUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginUsernameActionPerformed
@@ -652,8 +665,8 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
                     
             if(itemNav.get(currentItem).getType().equals("Pickup")){
                 cargoMap.put(c.getCustNo(),itemNav.get(currentItem).getName() +
-                        ": " + itemNav.get(currentItem).getWeight() +
-                        "Kg, " + (itemNav.get(currentItem).getLength() * 
+                        " - " + itemNav.get(currentItem).getWeight() +
+                        "Kg : " + (itemNav.get(currentItem).getLength() * 
                                 itemNav.get(currentItem).getWidth() *
                                 itemNav.get(currentItem).getHeight()) +
                         "ft³");
@@ -834,6 +847,7 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel AppScreen;
+    private javax.swing.JPanel BtnPanel;
     private javax.swing.JButton CargoBtn;
     private javax.swing.JPanel CargoScreen;
     private javax.swing.JButton ItemInfoBtn;
@@ -867,8 +881,8 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JButton loginBtn;
     private javax.swing.JPasswordField loginPassword;
