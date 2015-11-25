@@ -142,13 +142,16 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
             
             if(itemNav.get(currentItem).getType().equals("Pickup")){
                 c = itemNav.get(currentItem).getFrom();
+                if(!itemCancelBtn.isEnabled()){
+                    itemCancelBtn.setEnabled(true);
+                }
             }else{
                 c = itemNav.get(currentItem).getTo();
                 itemCancelBtn.setEnabled(false);
             }            
             
             // Navigation panel
-            NavItem.setText("Next Item: " + itemNav.get(currentItem).getType() + " - " + itemNav.get(currentItem).getName());
+            NavItem.setText(itemNav.get(currentItem).getType() + " - " + itemNav.get(currentItem).getName());
             NavAddr.setText(c.getAddr() + 
                     ", " + c.getCity());
             NavPCode.setText(c.getPostCode());
@@ -317,7 +320,7 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
                 .addComponent(loginBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(19, 19, 19)
                 .addComponent(loginRegisterBtn)
-                .addContainerGap(74, Short.MAX_VALUE))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
 
         MainPanel.add(LoginScreen, "LoginScreenView");
@@ -340,11 +343,14 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
             }
         });
 
-        NavItem.setText("Next Item: Pickup");
+        NavItem.setForeground(new java.awt.Color(255, 255, 255));
+        NavItem.setText("Pickup");
         NavItem.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
+        NavAddr.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         NavAddr.setText("23 Dundas Crescent, Dundee");
 
+        NavPCode.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         NavPCode.setText("D45 7DF");
 
         javax.swing.GroupLayout NavPanelLayout = new javax.swing.GroupLayout(NavPanel);
@@ -759,9 +765,29 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
             NavRight.setEnabled(false);
             itemNav.remove(currentItem);
         } else {
-            itemNav.remove(currentItem);
+            
+            Item it = itemNav.remove(currentItem);
             if(currentItem > 0){
                 currentItem--;
+            }
+  
+            // If pickup cancelled, cancel related delivery
+            if(it.getType().equals("Pickup")){
+                int j = 0;
+                int rmIndex = 0;
+                boolean rmSet = false;
+                for(Item i : itemNav){
+                    if(i.getType().equals("Delivery")){
+                        if(i.getTo() == it.getTo()){
+                            rmIndex = j;
+                            rmSet = true;
+                        }
+                    }
+                    j++;
+                }
+                if(rmSet = true){
+                    itemNav.remove(rmIndex);
+                }
             }
         }
         
