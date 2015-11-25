@@ -265,10 +265,11 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
         MainPanel.setBackground(new java.awt.Color(153, 153, 153));
         MainPanel.setLayout(new java.awt.CardLayout());
 
-        LoginScreen.setBackground(new java.awt.Color(102, 255, 102));
+        LoginScreen.setBackground(new java.awt.Color(51, 51, 51));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/logo2.png"))); // NOI18N
 
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Username");
 
         loginUsername.addActionListener(new java.awt.event.ActionListener() {
@@ -277,8 +278,12 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
             }
         });
 
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Password");
 
+        loginBtn.setBackground(new java.awt.Color(102, 102, 102));
+        loginBtn.setFont(new java.awt.Font("Arial Unicode MS", 1, 12)); // NOI18N
+        loginBtn.setForeground(new java.awt.Color(255, 255, 255));
         loginBtn.setText("Login");
         loginBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -286,6 +291,9 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
             }
         });
 
+        loginRegisterBtn.setBackground(new java.awt.Color(102, 102, 102));
+        loginRegisterBtn.setFont(new java.awt.Font("Arial Unicode MS", 1, 12)); // NOI18N
+        loginRegisterBtn.setForeground(new java.awt.Color(255, 255, 255));
         loginRegisterBtn.setText("Register Online");
 
         javax.swing.GroupLayout LoginScreenLayout = new javax.swing.GroupLayout(LoginScreen);
@@ -326,18 +334,18 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
 
         MainPanel.add(LoginScreen, "LoginScreenView");
 
-        AppScreen.setBackground(new java.awt.Color(102, 255, 102));
+        AppScreen.setBackground(new java.awt.Color(51, 51, 51));
 
-        NavPanel.setBackground(new java.awt.Color(102, 255, 102));
+        NavPanel.setBackground(new java.awt.Color(51, 51, 51));
 
-        NavLeft.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/NavLeft.png"))); // NOI18N
+        NavLeft.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/NavLeft2.png"))); // NOI18N
         NavLeft.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 NavLeftMouseClicked(evt);
             }
         });
 
-        NavRight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/NavRight.png"))); // NOI18N
+        NavRight.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/NavRight2.png"))); // NOI18N
         NavRight.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 NavRightMouseClicked(evt);
@@ -345,13 +353,16 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
         });
 
         NavItem.setFont(new java.awt.Font("Arial Unicode MS", 0, 14)); // NOI18N
+        NavItem.setForeground(new java.awt.Color(255, 255, 255));
         NavItem.setText("Pickup");
         NavItem.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         NavAddr.setFont(new java.awt.Font("Arial Unicode MS", 0, 14)); // NOI18N
+        NavAddr.setForeground(new java.awt.Color(255, 255, 255));
         NavAddr.setText("23 Dundas Crescent, Dundee");
 
         NavPCode.setFont(new java.awt.Font("Arial Unicode MS", 0, 14)); // NOI18N
+        NavPCode.setForeground(new java.awt.Color(255, 255, 255));
         NavPCode.setText("D45 7DF");
 
         javax.swing.GroupLayout NavPanelLayout = new javax.swing.GroupLayout(NavPanel);
@@ -387,7 +398,7 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        ScreenViews.setBackground(new java.awt.Color(102, 255, 102));
+        ScreenViews.setBackground(new java.awt.Color(51, 51, 51));
         ScreenViews.setLayout(new java.awt.CardLayout());
 
         MapScreen.setBackground(new java.awt.Color(102, 255, 102));
@@ -407,7 +418,7 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
 
         ScreenViews.add(MapScreen, "mapScreen");
 
-        ItemScreen.setBackground(new java.awt.Color(204, 204, 255));
+        ItemScreen.setBackground(new java.awt.Color(51, 51, 51));
 
         itemConfirmBtn.setBackground(new java.awt.Color(102, 255, 102));
         itemConfirmBtn.setText("Confirm Item Pickup/Delivery");
@@ -418,14 +429,18 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
         });
 
         itemName.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        itemName.setForeground(new java.awt.Color(255, 255, 255));
         itemName.setText("Item:");
 
         itemWeight.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        itemWeight.setForeground(new java.awt.Color(255, 255, 255));
         itemWeight.setText("Weight: ");
 
         itemDimensions.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        itemDimensions.setForeground(new java.awt.Color(255, 255, 255));
         itemDimensions.setText("Dimension: ");
 
+        itemType.setForeground(new java.awt.Color(255, 255, 255));
         itemType.setText("Type: ");
 
         itemCancelBtn.setBackground(new java.awt.Color(255, 51, 51));
@@ -484,7 +499,7 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
 
         ScreenViews.add(ItemScreen, "imageScreen");
 
-        CargoScreen.setBackground(new java.awt.Color(204, 204, 255));
+        CargoScreen.setBackground(new java.awt.Color(51, 51, 51));
 
         cargoList.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
         cargoList.setModel(new javax.swing.AbstractListModel<String>() {
@@ -494,10 +509,13 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
         });
         cargoListScroll.setViewportView(cargoList);
 
+        cargoCapacity.setForeground(new java.awt.Color(255, 255, 255));
         cargoCapacity.setText("Capacity: 41,000Kg, 30' x 10' x 10' ");
 
+        cargoWeight.setForeground(new java.awt.Color(255, 255, 255));
         cargoWeight.setText("Weight Used:");
 
+        cargoVolume.setForeground(new java.awt.Color(255, 255, 255));
         cargoVolume.setText("Volume Used:");
 
         javax.swing.GroupLayout CargoScreenLayout = new javax.swing.GroupLayout(CargoScreen);
@@ -547,10 +565,11 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
 
         ScreenViews.add(CargoScreen, "cargoScreen");
 
-        BtnPanel.setBackground(new java.awt.Color(102, 255, 102));
+        BtnPanel.setBackground(new java.awt.Color(51, 51, 51));
 
-        MapBtn.setBackground(new java.awt.Color(204, 204, 255));
+        MapBtn.setBackground(new java.awt.Color(51, 51, 51));
         MapBtn.setFont(new java.awt.Font("Arial Unicode MS", 0, 18)); // NOI18N
+        MapBtn.setForeground(new java.awt.Color(255, 255, 255));
         MapBtn.setText("Map");
         MapBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -558,8 +577,9 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
             }
         });
 
-        ItemInfoBtn.setBackground(new java.awt.Color(204, 204, 255));
+        ItemInfoBtn.setBackground(new java.awt.Color(51, 51, 51));
         ItemInfoBtn.setFont(new java.awt.Font("Arial Unicode MS", 0, 18)); // NOI18N
+        ItemInfoBtn.setForeground(new java.awt.Color(255, 255, 255));
         ItemInfoBtn.setText("Item Info");
         ItemInfoBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -567,8 +587,9 @@ public class DeliveryOptimiserMain extends javax.swing.JFrame {
             }
         });
 
-        CargoBtn.setBackground(new java.awt.Color(204, 204, 255));
+        CargoBtn.setBackground(new java.awt.Color(51, 51, 51));
         CargoBtn.setFont(new java.awt.Font("Arial Unicode MS", 0, 18)); // NOI18N
+        CargoBtn.setForeground(new java.awt.Color(255, 255, 255));
         CargoBtn.setText("Cargo");
         CargoBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

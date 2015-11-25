@@ -53,7 +53,7 @@
         <Container class="javax.swing.JPanel" name="LoginScreen">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="66" green="ff" red="66" type="rgb"/>
+              <Color blue="33" green="33" red="33" type="rgb"/>
             </Property>
           </Properties>
           <Constraints>
@@ -112,6 +112,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel2">
               <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Username"/>
               </Properties>
             </Component>
@@ -122,11 +125,23 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel3">
               <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Password"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="loginBtn">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="66" green="66" red="66" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial Unicode MS" size="12" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Login"/>
               </Properties>
               <Events>
@@ -135,6 +150,15 @@
             </Component>
             <Component class="javax.swing.JButton" name="loginRegisterBtn">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="66" green="66" red="66" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial Unicode MS" size="12" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Register Online"/>
               </Properties>
             </Component>
@@ -145,7 +169,7 @@
         <Container class="javax.swing.JPanel" name="AppScreen">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="66" green="ff" red="66" type="rgb"/>
+              <Color blue="33" green="33" red="33" type="rgb"/>
             </Property>
           </Properties>
           <Constraints>
@@ -179,7 +203,7 @@
             <Container class="javax.swing.JPanel" name="NavPanel">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="66" green="ff" red="66" type="rgb"/>
+                  <Color blue="33" green="33" red="33" type="rgb"/>
                 </Property>
               </Properties>
 
@@ -228,7 +252,7 @@
                 <Component class="javax.swing.JLabel" name="NavLeft">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Images/NavLeft.png"/>
+                      <Image iconType="3" name="/Images/NavLeft2.png"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -238,7 +262,7 @@
                 <Component class="javax.swing.JLabel" name="NavRight">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Images/NavRight.png"/>
+                      <Image iconType="3" name="/Images/NavRight2.png"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -250,6 +274,9 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Arial Unicode MS" size="14" style="0"/>
                     </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Pickup"/>
                     <Property name="horizontalTextPosition" type="int" value="0"/>
                   </Properties>
@@ -259,6 +286,9 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Arial Unicode MS" size="14" style="0"/>
                     </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="23 Dundas Crescent, Dundee"/>
                   </Properties>
                 </Component>
@@ -266,6 +296,9 @@
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Arial Unicode MS" size="14" style="0"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="D45 7DF"/>
                   </Properties>
@@ -275,7 +308,7 @@
             <Container class="javax.swing.JPanel" name="ScreenViews">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="66" green="ff" red="66" type="rgb"/>
+                  <Color blue="33" green="33" red="33" type="rgb"/>
                 </Property>
               </Properties>
 
@@ -318,7 +351,7 @@
                 <Container class="javax.swing.JPanel" name="ItemScreen">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="cc" red="cc" type="rgb"/>
+                      <Color blue="33" green="33" red="33" type="rgb"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -393,6 +426,9 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Dialog" size="12" style="0"/>
                         </Property>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="Item:"/>
                       </Properties>
                     </Component>
@@ -400,6 +436,9 @@
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Dialog" size="12" style="0"/>
+                        </Property>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Weight: "/>
                       </Properties>
@@ -409,11 +448,17 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Dialog" size="12" style="0"/>
                         </Property>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="Dimension: "/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="itemType">
                       <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="Type: "/>
                       </Properties>
                     </Component>
@@ -451,7 +496,7 @@
                 <Container class="javax.swing.JPanel" name="CargoScreen">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="cc" red="cc" type="rgb"/>
+                      <Color blue="33" green="33" red="33" type="rgb"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -550,16 +595,25 @@
                     </Container>
                     <Component class="javax.swing.JLabel" name="cargoCapacity">
                       <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="Capacity: 41,000Kg, 30&apos; x 10&apos; x 10&apos; "/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="cargoWeight">
                       <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="Weight Used:"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="cargoVolume">
                       <Properties>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="Volume Used:"/>
                       </Properties>
                     </Component>
@@ -574,7 +628,7 @@
             <Container class="javax.swing.JPanel" name="BtnPanel">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="66" green="ff" red="66" type="rgb"/>
+                  <Color blue="33" green="33" red="33" type="rgb"/>
                 </Property>
               </Properties>
 
@@ -616,10 +670,13 @@
                 <Component class="javax.swing.JButton" name="MapBtn">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="cc" red="cc" type="rgb"/>
+                      <Color blue="33" green="33" red="33" type="rgb"/>
                     </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Arial Unicode MS" size="18" style="0"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Map"/>
                   </Properties>
@@ -630,10 +687,13 @@
                 <Component class="javax.swing.JButton" name="ItemInfoBtn">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="cc" red="cc" type="rgb"/>
+                      <Color blue="33" green="33" red="33" type="rgb"/>
                     </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Arial Unicode MS" size="18" style="0"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Item Info"/>
                   </Properties>
@@ -644,10 +704,13 @@
                 <Component class="javax.swing.JButton" name="CargoBtn">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="cc" red="cc" type="rgb"/>
+                      <Color blue="33" green="33" red="33" type="rgb"/>
                     </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Arial Unicode MS" size="18" style="0"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Cargo"/>
                   </Properties>
